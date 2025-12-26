@@ -80,7 +80,7 @@ x-airflow-common:
     - /var/run/docker.sock:/var/run/docker.sock
   user: "${AIRFLOW_UID:-50000}:0"
   group_add:
-    - "999"
+    - "988"
   depends_on:
     &airflow-common-depends-on
     redis:
